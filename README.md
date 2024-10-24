@@ -87,7 +87,7 @@ This simple function will output the neighbors (related concepts) of any node in
 Neighbors of AI: ['ML', 'Data Science', 'NLP']
 ```
 
-This could be extended into more complex search and retrieval systems, such as **Graph-RAG** (retrieval-augmented generation), where you combine graph traversal with semantic search techniques.
+This could be extended into more complex search and retrieval systems where you combine graph traversal with semantic search techniques.
 
 ### **Applications of Knowledge Graphs**
 
@@ -95,6 +95,67 @@ Here are just a few ways knowledge graphs are used in real-world applications:
 - **Search Engines**: Search engines like Google use knowledge graphs to link related concepts and provide better search results.
 - **Question-Answering Systems**: AI systems use knowledge graphs to understand the context of questions and generate more accurate answers.
 - **Recommendation Systems**: By exploring relationships in a knowledge graph, recommendation systems can suggest products or content related to what a user has already explored.
+
+### What Does the `explore_neighbors` Function Do?
+
+In a **knowledge graph**, each concept (node) can have one or more related concepts (neighbors). The `explore_neighbors` function is designed to **retrieve** these related concepts for any given node. In simpler terms, if you want to know which concepts are directly related to "AI" in the graph, this function will return a list of those related concepts.
+
+### The Code
+
+```python
+def explore_neighbors(graph, node):
+    return graph.get(node, [])
+```
+
+Here’s what’s happening in this function:
+
+1. **`graph`**: This is the **knowledge graph** itself, which is a dictionary where each key is a concept, and the values are lists of related concepts (neighbors).
+2. **`node`**: This is the **specific concept** you’re interested in, like "AI" or "ML". You pass this to the function to find its neighbors.
+3. **`graph.get(node, [])`**: The function uses the `get` method to look up the **node** in the `graph` dictionary:
+   - If the **node** exists in the graph, it returns its list of neighbors.
+   - If the **node** doesn't exist (for example, if you ask for a node that's not in the graph), it returns an empty list `[]`.
+
+### Example in Action
+
+Let’s say we want to explore the neighbors of the node `"AI"`. Here's how it works:
+
+```python
+# Our simple knowledge graph
+knowledge_graph = {
+    "AI": ["ML", "Data Science", "NLP"],
+    "ML": ["AI", "Deep Learning", "Statistics"],
+    "Data Science": ["AI", "Statistics", "Data Engineering"],
+    "NLP": ["AI", "Speech Recognition", "Text Processing"],
+}
+
+# Call the explore_neighbors function to find neighbors of AI
+print("Neighbors of AI:", explore_neighbors(knowledge_graph, "AI"))
+```
+
+In this case, we pass `"AI"` as the **node** argument, and the function looks up "AI" in the graph and finds its neighbors: `"ML"`, `"Data Science"`, and `"NLP"`.
+
+The output will be:
+
+```
+Neighbors of AI: ['ML', 'Data Science', 'NLP']
+```
+
+This tells us that "AI" is directly connected to these three concepts in the knowledge graph.
+
+### Why Is `get(node, [])` Used?
+
+We use `get(node, [])` instead of just `graph[node]` because it’s safer. If you try to look up a node that **doesn't exist** in the graph using `graph[node]`, Python will raise a **KeyError**. By using `get()`, we can provide a **default value** (in this case, an empty list `[]`) to avoid errors if the node isn’t found in the graph.
+
+### Summary of How It Works:
+- **Input**: You give it a node (e.g., `"AI"`) from the knowledge graph.
+- **Process**: The function looks for that node in the graph and retrieves its list of neighbors (e.g., related concepts).
+- **Output**: A list of neighbors (e.g., `['ML', 'Data Science', 'NLP']`).
+
+### Why It's Important
+
+In a knowledge graph, the ability to **explore neighbors** is essential. It lets you see which concepts are directly connected to a given node, allowing you to navigate through the graph and understand how different ideas relate to each other.
+
+---
 
 ### **Conclusion**
 
