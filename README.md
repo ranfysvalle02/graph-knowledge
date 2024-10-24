@@ -168,10 +168,8 @@ If you're interested in building your own knowledge graph, start small! You can 
 ### **Resources**
 **[Things not Strings](https://blog.google/products/search/introducing-knowledge-graph-things-not/)**
 
-**MongoDB + GraphRAG**:
+**[MongoDB + GraphRAG](https://github.com/ranfysvalle02/mongodb-graph)**:
 Check out how $graphLookup operator can help with traversing the knowledge graph.
-
-`https://github.com/ranfysvalle02/mongodb-graph`
 
 ## FULL CODE
 
