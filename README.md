@@ -58,8 +58,6 @@ AI ----- ML ------ Deep Learning
    Data Engineering
 ```
 
-Here, you can see how the concepts form a network, with AI sitting at the center, connected to ML, Data Science, and NLP. Machine Learning (ML) branches off into Deep Learning, Statistics, and AI, while Data Science links to AI, Statistics, and Data Engineering.
-
 ### **Why Are Knowledge Graphs Useful?**
 
 Knowledge graphs help us model the relationships between concepts in a way that is easy to navigate and understand. Here are a few key benefits:
