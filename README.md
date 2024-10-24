@@ -1,6 +1,6 @@
 # graphRAG-from-scratch
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkJ_ho8KtP-PZMgYp-Hz4xY76GA6oSlKgrbw&s)
+![](https://i.ytimg.com/vi/-jkKlY9UA_Y/maxresdefault.jpg)
 
 ---
 
