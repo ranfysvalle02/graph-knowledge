@@ -4,7 +4,7 @@
 
 ---
 
-### **Things not Strings:Connecting Concepts for Better Understanding**
+### **Things not Strings: Connecting Concepts for Better Understanding**
 
 In today’s world of machine learning, data science, and artificial intelligence (AI), **knowledge graphs** have become a powerful tool for structuring information. By connecting related concepts in a network of nodes and edges, knowledge graphs help visualize the relationships between ideas in a meaningful and intuitive way.
 
