@@ -167,7 +167,9 @@ If you're interested in building your own knowledge graph, start small! You can 
 
 ### ***Resources**
 
-https://github.com/ranfysvalle02/mongodb-graph
+Check out how $graphLookup operator can help with traversing the knowledge graph.
+
+`https://github.com/ranfysvalle02/mongodb-graph`
 
 ## FULL CODE
 
