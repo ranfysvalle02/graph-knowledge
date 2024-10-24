@@ -165,7 +165,7 @@ A knowledge graph is a powerful tool for structuring and exploring relationships
 
 If you're interested in building your own knowledge graph, start small! You can expand your graph over time, adding more nodes and relationships as your system grows. The code examples provided in this post should give you a solid foundation to start building and exploring your own knowledge graph.
 
-### ***Resources**
+### **Resources**
 **[Things not Strings](https://blog.google/products/search/introducing-knowledge-graph-things-not/)**
 
 **MongoDB + GraphRAG**:
