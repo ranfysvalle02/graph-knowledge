@@ -1,7 +1,5 @@
 # graphRAG-from-scratch
 
-Here's a draft for a blog post based on the explanation of a simple knowledge graph:
-
 ---
 
 ## **Building a Simple Knowledge Graph: Connecting Concepts for Better Understanding**
