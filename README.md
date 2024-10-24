@@ -257,7 +257,9 @@ if __name__ == "__main__":
     
     # Run the graph RAG demo for the query
     graph_rag(query, query_vector, knowledge_graph, documents, depth=2)
+"""
 Starting GraphRAG demo with query: AI
 Exploring neighborhood of 'AI' up to depth 2: ['AI', 'ML', 'Data Science', 'NLP']
 Best document in neighborhood: ML (Similarity: 1.00)
+"""
 ```
